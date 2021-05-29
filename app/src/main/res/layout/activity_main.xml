@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employer Data"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="Employee id"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Name"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/id"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Age"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:layout_below="@+id/name"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Salary"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:layout_below="@+id/age"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Department"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/salary"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:backgroundTint="#ff0000"
+        android:text="Insert  Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/department"/>
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:backgroundTint="#ff0000"
+        android:text="Update Data"
+        android:layout_below="@id/Insert"/>
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:backgroundTint="#ff0000"
+        android:text="Delete  Data"
+        android:layout_below="@id/Update"/>
+    <Button
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff0000"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:layout_below="@id/Delete"/>
+
+
+</RelativeLayout>
